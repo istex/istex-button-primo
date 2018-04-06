@@ -13,18 +13,18 @@ Le code est à copier dans le fichier custom.js présent dans le dossier js du p
 
 ### Emplacement sur la page de Primo (NUI)
 Il est possible de choisir l'emplacement du bouton sur la page, ici le choix a été fait de l'afficher dans le Brief display :
-'''javascript
+```javascript
 app.component('prmSearchResultAvailabilityLineAfter', {
 			bindings: { parentCtrl: '<' },
 			controller: 'prmSearchResultAvailabilityLineAfterController',
 			template: '<div class="istex" ng-show="$ctrl.IstexAvail"><p ng-bind-html="$ctrl.IstexAvail"></p></div>'
 	});
-'''
+```
 ### Stockage d'une image
 Il est possible de stocker une image pour le bouton dans le dossier img du package et ensuite y faire référence de cette manière :
-'''html
-$scope.$ctrl.IstexAvail = '<img src="custom/[Name of the package]/img/istex.png">
-'''
+```javascript
+$scope.$ctrl.IstexAvail = '<img src="custom/[Name of the package]/img/istex.png">'
+```
 
 
 Développé par Camille Mazé et Vincent Thébault, Université Paris-Saclay.
