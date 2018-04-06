@@ -2,7 +2,7 @@
     "use strict";
     'use strict';
 
-	var app = angular.module('centralCustom', ['angularLoad']);
+    var app = angular.module('centralCustom', ['angularLoad']);
 
     app.component('prmSearchResultAvailabilityLineAfter', {
 			bindings: { parentCtrl: '<' },
