@@ -17,12 +17,12 @@
             var url = "";
             if (doi !== "") {
                 url = 'https://api.istex.fr/document/openurl?rft_id=info:doi/%22' + doi + '%22&noredirect=1&sid=focus';
-            } else if (authorLastName !== "") {
-                url = 'https://api.istex.fr/document/openurl?rft.title=%22' + title + '%22&rft.au=%22' + authorLastName + '%22&noredirect=1&sid=focus';
             } else if (issn !== "") {
                 url = 'https://api.istex.fr/document/openurl?rft.title=%22' + title + '%22&rft.issn=' + issn + '&noredirect=1&sid=focus';
             } else if (isbn !== "") {
                 url = 'https://api.istex.fr/document/openurl?rft.title=%22' + title + '%22&rft.isbn=' + isbn + '&noredirect=1&sid=focus';
+            } else if (authorLastName !== "") {
+                url = 'https://api.istex.fr/document/openurl?rft.title=%22' + title + '%22&rft.au=%22' + authorLastName + '%22&noredirect=1&sid=focus';
             } else if (date !== "") {
                 url = 'https://api.istex.fr/document/openurl?rft.title=%22' + title + '%22&rft.date=' + date + '&noredirect=1&sid=focus';
             }
